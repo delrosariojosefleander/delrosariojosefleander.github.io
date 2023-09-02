@@ -85,7 +85,10 @@ This program takes in Sudoku puzzles in the form of multidimensional arrays. The
 	    }
 	    return true;
 	  }
--------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 After checking the array, it is passed to another method called fillSudoku, which fills in the array according to Sudoku's rules. To ensure that the Sudoku puzzle is solved correctly, the checkSudoku method is called within the fillSudoku metho.  
@@ -126,7 +129,10 @@ After checking the array, it is passed to another method called fillSudoku, whic
 	    return false;
 	  }
 	}
--------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 In order to test these functions, a separate file was created to assess the capability of my program. This file contains a method named 'testSudoku' that prints the unsolved puzzle and its solution. If there are any mistakes or incompletions made by the program, or if an invalid puzzle was submitted, the 'testSudoku' method will display them.

@@ -9,7 +9,7 @@ labels:
   - Java
 summary: "A sudoku puzzle solver."
 ---
-This program takes in sudoku puzzles in the form of multidimensional arrays. These are arrays are sent to a method called checkSudoku that takes in a multidimensional array and anaylzes them to make sure that they are in accordance with sudoku's rules. 
+This program takes in Sudoku puzzles in the form of multidimensional arrays. These arrays are sent to a method called checkSudoku that takes in a multidimensional array and analyzes them to ensure that they are in accordance with Sudoku's rules.
 
 -------------------------------------------------------------------------------------------------------
 	  public static boolean checkSudoku (int [] [] sudoku, boolean printErrors)
@@ -88,7 +88,7 @@ This program takes in sudoku puzzles in the form of multidimensional arrays. The
 -------------------------------------------------------------------------------------------------------
 
 
-After checking the array, it is then passed to another method called fillSudoku that fills in the array in accordance to sudoku's rules. To make sure that the sudoku puzzle is solved correctly, the checkSudoku method is called in the fillSudoku method.  
+After checking the array, it is passed to another method called fillSudoku, which fills in the array according to Sudoku's rules. To ensure that the Sudoku puzzle is solved correctly, the checkSudoku method is called within the fillSudoku metho.  
 
 
 -------------------------------------------------------------------------------------------------------
@@ -129,8 +129,7 @@ After checking the array, it is then passed to another method called fillSudoku 
 -------------------------------------------------------------------------------------------------------
 
 
-In order to test these functions a separate file was created called testSudoku was created to test the ability of my program. The testSudoku file contained a method called testSudoku to print the results. If there are any mistakes or incompletions made by the program or if an invalid puzzle was submitted the testSudoku method will display them. 
-
+In order to test these functions, a separate file was created to assess the capability of my program. This file contains a method named 'testSudoku' that prints the unsolved puzzle and its solution. If there are any mistakes or incompletions made by the program, or if an invalid puzzle was submitted, the 'testSudoku' method will display them.
 
 -------------------------------------------------------------------------------------------------------
 	  private static void testSudoku(String name,

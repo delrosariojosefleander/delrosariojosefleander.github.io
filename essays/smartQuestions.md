@@ -47,6 +47,7 @@ Example of a Not-So-Smart Question:
 Title: "help pls, code not working"
 
 Link: https://stackoverflow.com/questions/77064143/program-and-algorithms-in-java-3-15-lab-product-class-eo
+
 Summary: The asker's question lacks details and context. It provides no information about the problem faced, or any troubleshooting steps taken. The title is vague and uninformative. 
 
 ##  Insights Gained

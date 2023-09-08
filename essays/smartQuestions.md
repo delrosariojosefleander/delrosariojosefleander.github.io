@@ -34,13 +34,16 @@ Smart Question: The responses to the smart question are constructive and helpful
 
 Not-So-Smart Question: In contrast, responses to the not-so-smart question are less helpful. Responders request additional information to clarify the issue, but the asker provides no follow-up details. Some responses express frustration with the lack of information provided.
 
+
 Example of a Smart Question:
 
 Title: "How to serialize java.math.BigDecimal in Avro?"
 
 Link: https://stackoverflow.com/questions/38213063/how-to-serialize-java-math-bigdecimal-in-avro
 
-Summary: The asker provides a clear and concise question about Avro schemas, which are typically defined using JSON and include various primitive and complex data types. The inquiry specifically asks which Avro data type should be used to represent a BigDecimal, a precise numeric data type. The asker is seeking guidance on how to properly define a schema for this specific data type within the Avro framework.
+Summary: The asker provides a clear and concise question about Avro schemas. The inquiry specifically asks which Avro data type should be used to represent a BigDecimal, a precise numeric data type. The asker is seeking guidance on how to properly define a schema for this specific data type within the Avro framework.
+
+
 
 Example of a Not-So-Smart Question:
 

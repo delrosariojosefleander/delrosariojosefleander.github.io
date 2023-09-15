@@ -91,7 +91,7 @@ This program takes in Sudoku puzzles in the form of multidimensional arrays. The
 
 
 
-After checking the array, it is passed to another method called fillSudoku, which fills in the array according to Sudoku's rules. To ensure that the Sudoku puzzle is solved correctly, the checkSudoku method is called within the fillSudoku metho.  
+After checking the array, it is passed to another method called fillSudoku, which fills in the array according to Sudoku's rules. To ensure that the Sudoku puzzle is solved correctly, the checkSudoku method is called within the fillSudoku method.  
 
 
 -------------------------------------------------------------------------------------------------------
@@ -170,3 +170,7 @@ In order to test these functions, a separate file was created to assess the capa
 	                          Sudoku.toString (sudoku, true));
 	    }
 	  }
+
+
+
+source code: <a href="https://github.com/delrosariojosefleander/SudokuSolver"><i class="large github icon "></i>Sudoku Solver</a>

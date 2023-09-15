@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/Queue.JPG
 title: "Queue Simulator"
 date: 2022
 published: true

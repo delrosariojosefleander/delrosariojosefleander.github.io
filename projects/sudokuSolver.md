@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/vacay/vacay-square.png
+image: img/Sudoku.png
 title: "Sukdoku Cheats(Free)(No virus)(2024)"
 date: 2023
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/Queue.JPG
+image: img/queue.jpg
 title: "Queue Simulator"
 date: 2022
 published: true

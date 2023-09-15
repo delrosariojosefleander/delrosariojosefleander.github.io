@@ -4,7 +4,7 @@ type: project
 image: img/cotton/cotton-square.png
 title: "Queue Simulator"
 date: 2022
-published: false
+published: true
 labels:
   - Java
 summary: "A simulation of a queue that I developed for ICS 211."

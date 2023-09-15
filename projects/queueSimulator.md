@@ -15,4 +15,4 @@ Here is an example of the output:
 
 <img class="img-threshold" width = "300px" src="../img/resultOfQueue.PNG">
 
-source code: <a href="https://github.com/delrosariojosefleander/QueueSimulator"><i class="large github icon "></i>QueueSimulator</a>
+source code: <a href="https://github.com/delrosariojosefleander/QueueSimulator"><i class="large github icon "></i>Queue Simulator</a>

@@ -15,4 +15,4 @@ Here is an example of it in use:
 
 <img class="img-threshold" width = "300px" src="../img/resultOfStackCalculator.PNG">
 
-source code: <a href="https://github.com/delrosariojosefleander/StackCalculator"><i class="large github icon "></i>StackCalculator</a>
+source code: <a href="https://github.com/delrosariojosefleander/StackCalculator"><i class="large github icon "></i>Stack Calculator</a>

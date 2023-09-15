@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/queue.jpg
 title: "Queue Simulator"
-date: 2022
+date: 2023
 published: true
 labels:
   - Java

@@ -1,0 +1,58 @@
+{
+  "basics": {
+    "name": "Josef Leander Del Rosario",
+    "label": "Student",
+    "picture": "https://github.com/delrosariojosefleander.png",
+    "email": "josef4@hawaii.edu",
+    "phone": "808-927-9878",
+    "website": "https://delrosariojosefleander.github.io",
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2025.",
+    "location": { "address": "", "postalCode": "97606", "city": "Ewa Beach", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "delrosariojosefleander", "url": "http://github.com/delrosariojosefleander" },
+      { "network": "linkedin", "username": "josef-leander-del-rosario", "url": "https://www.linkedin.com/in/josef-leander-del-rosario-12435528a/" }
+    ]
+  },
+  "interests": [
+    { "name": "Interactive media" },
+    { "name": "Network Design" },
+    { "name": "3D Graphics" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C", "Java", "Javascript" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "MacOS", "Git/GitHub" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science (expected Spring, 2025)",
+      "studyType": "B.S.",
+      "startDate": "2018-09-01",
+      "endDate": "Present",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+    }
+  ],
+  "volunteer": [
+    {
+    }
+  ],
+  "awards": [
+    {
+    }
+  ],
+  "references": [
+    {
+    }
+  ]
+}

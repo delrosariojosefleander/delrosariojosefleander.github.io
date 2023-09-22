@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Sukdoku Cheats(Free)(No virus)(2024) | Josef Leander Del Rosario | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/delrosariojosefleander.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Josef Leander Del Rosario | Professional Portfolio">
+    <meta property="og:url" content="https://delrosariojosefleander.github.io/projects/sudokuSolver.html">
+    <meta property="og:title" content="Sukdoku Cheats(Free)(No virus)(2024) | Josef Leander Del Rosario | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/delrosariojosefleander.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Sukdoku Cheats(Free)(No virus)(2024) | Josef Leander Del Rosario | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Josef Leander Del Rosario</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Sukdoku Cheats(Free)(No virus)(2024)</h1>
+ <p>This program takes in Sudoku puzzles in the form of multidimensional arrays. These arrays are sent to a method called checkSudoku that takes in a multidimensional array and analyzes them to ensure that they are in accordance with Sudoku’s rules.</p>
+
+<hr />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  public static boolean checkSudoku (int [] [] sudoku, boolean printErrors)
+  {
+    if (sudoku.length != 9) {
+      if (printErrors) {
+        System.out.println ("sudoku has " + sudoku.length +
+                            " rows, should have 9");
+      }
+      return false;
+    }
+    for (int i = 0; i &lt; sudoku.length; i++) {
+      if (sudoku [i].length != 9) {
+        if (printErrors) {
+          System.out.println ("sudoku row " + i + " has " +
+                              sudoku [i].length + " cells, should have 9");
+        }
+        return false;
+      }
+    }
+    /* check each cell for conflicts */
+    for (int i = 0; i &lt; sudoku.length; i++) {
+      for (int j = 0; j &lt; sudoku.length; j++) {
+        int cell = sudoku [i] [j];
+        if (cell == 0) {
+          continue;   /* blanks are always OK */
+        }
+        if ((cell &lt; 1) || (cell &gt; 9)) {
+          if (printErrors) {
+            System.out.println ("sudoku row " + i + " column " + j +
+                                " has illegal value " + cell);
+          }
+          return false;
+        }
+        /* does it match any other value in the same row? */
+        for (int m = 0; m &lt; sudoku.length; m++) {
+          if ((j != m) &amp;&amp; (cell == sudoku [i] [m])) {
+            if (printErrors) {
+              System.out.println ("sudoku row " + i + " has " + cell +
+                                  " at both positions " + j + " and " + m);
+            }
+            return false;
+          }
+        }
+        /* does it match any other value it in the same column? */
+        for (int k = 0; k &lt; sudoku.length; k++) {
+          if ((i != k) &amp;&amp; (cell == sudoku [k] [j])) {
+            if (printErrors) {
+              System.out.println ("sudoku column " + j + " has " + cell +
+                                  " at both positions " + i + " and " + k);
+            }
+            return false;
+          }
+        }
+        /* does it match any other value in the 3x3? */
+        for (int k = 0; k &lt; 3; k++) {
+          for (int m = 0; m &lt; 3; m++) {
+            int testRow = (i / 3 * 3) + k;   /* test this row */
+            int testCol = (j / 3 * 3) + m;   /* test this col */
+            if ((i != testRow) &amp;&amp; (j != testCol) &amp;&amp;
+                (cell == sudoku [testRow] [testCol])) {
+              if (printErrors) {
+                System.out.println ("sudoku character " + cell + " at row " +
+                                    i + ", column " + j + 
+                                    " matches character at row " + testRow +
+                                    ", column " + testCol);
+              }
+              return false;
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+</code></pre></div></div>
+
+<p>After checking the array, it is passed to another method called fillSudoku, which fills in the array according to Sudoku’s rules. To ensure that the Sudoku puzzle is solved correctly, the checkSudoku method is called within the fillSudoku method.</p>
+
+<hr />
+<p>public static boolean fillSudoku (int [] [] sudoku) {
+		boolean allFilled = true;
+		int row = -1;
+		int col = -1;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	for(int i = 0; i &lt; 9; i++) {
+		for(int j = 0; j &lt; 9; j++) {
+			if(sudoku[i][j] == 0 ) {
+				row = i;
+				col = j;
+				allFilled = false;
+				break;
+			}
+		}
+		if(!allFilled) {
+			break;
+		}
+	}
+	if(allFilled) {
+		return true;
+	}
+	for(int num = 1; num &lt;=9; num++) {
+		sudoku[row][col] = num;
+		if(checkSudoku(sudoku,false)) {
+			if(fillSudoku(sudoku)) {
+				return true;
+			}
+		}
+		
+	}
+	sudoku[row][col] = 0;
+    return false;
+  }
+}
+</code></pre></div></div>
+
+<p>In order to test these functions, a separate file was created to assess the capability of my program. This file contains a method named ‘testSudoku’ that prints the unsolved puzzle and its solution. If there are any mistakes or incompletions made by the program, or if an invalid puzzle was submitted, the ‘testSudoku’ method will display them.</p>
+
+<hr />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  private static void testSudoku(String name,
+                                 int [] [] sudoku, int [] [] solution)
+  {
+    System.out.println ("solving " + name + "\n" +
+                        Sudoku.toString (sudoku, true));
+    if (Sudoku.fillSudoku (sudoku)) {
+      if (isFilled(sudoku) &amp;&amp; Sudoku.checkSudoku (sudoku, true)) {
+        System.out.println ("success!\n" + Sudoku.toString (sudoku, true));
+        if (solution != null) {
+          int [] [] diff = sameSudoku (sudoku, solution);
+          if (diff != null) {
+            System.out.println ("given solution:\n" +
+                                Sudoku.toString (solution, true));
+            System.out.println ("difference between solutions:\n" +
+                                Sudoku.toString (diff, true));
+          }
+        }
+      } else {   /* the supposed solution is not a complete or valid sudoku */
+        if (! isFilled(sudoku)) {
+          System.out.println ("sudoku was not completely filled:\n" +
+                              Sudoku.toString (sudoku, false));
+        }
+        if (! Sudoku.checkSudoku(sudoku, false)) {
+          System.out.println ("sudoku is not a valid solution:\n" +
+                              Sudoku.toString (sudoku, false));
+        }
+      }
+    } else {
+      System.out.println ("unable to complete sudoku " + name + "\n" +
+                          Sudoku.toString (sudoku, true));
+    }
+  }
+</code></pre></div></div>
+
+<p>source code: <a href="https://github.com/delrosariojosefleander/SudokuSolver"><i class="large github icon "></i>Sudoku Solver</a></p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
